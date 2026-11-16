@@ -2,12 +2,13 @@
 // @name         AmapLoginAssist - 新版高德密码登录入口
 // @namespace    https://github.com/hehehegfd/AmapLoginAssist
 // @homepageURL  https://github.com/hehehegfd/AmapLoginAssist
-// @version      0.8
+// @version      0.8.1
 // @description  在地图左下角添加官方密码及第三方登录入口，登录后返回当前地图。
 // @author       hehehegfd; original idea by chaofunchengfeng
-// @match        https://ditu.amap.com/*
-// @match        https://www.amap.com/*
+// @match        https://*.amap.com/*
 // @match        https://amap.com/*
+// @match        https://*.gaode.com/*
+// @match        https://gaode.com/*
 // @run-at       document-end
 // @noframes
 // @grant        none
@@ -42,7 +43,7 @@ SOFTWARE.
 
 (function () {
     'use strict';
-    if (document.getElementById('amap-login-assist-2026')) return;
+    if (location.hostname === 'id.amap.com' || document.getElementById('amap-login-assist-2026')) return;
 
     const link = document.createElement('a');
     link.id = 'amap-login-assist-2026';
@@ -64,3 +65,4 @@ SOFTWARE.
     link.addEventListener('click', updateLink);
     document.body.appendChild(link);
 })();
+
