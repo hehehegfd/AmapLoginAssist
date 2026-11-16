@@ -9,7 +9,7 @@
 已安装 Tampermonkey 后，点击 **[安装 0.8.1 脚本](https://raw.githubusercontent.com/hehehegfd/AmapLoginAssist/main/AmapLoginAssist.user.js)**。
 
 1. 在 Tampermonkey 安装页面确认安装。如果链接显示源码，可复制全部内容到 Tampermonkey 的“添加新脚本”中保存。
-2. 停用原版 0.7 或此前本地试用的 1.0.0 / 1.1.0，保留本仓库版本启用。
+2. 停用原版 0.7 或此前版本。
 3. 刷新 [高德地图](https://ditu.amap.com/ssr/search)，点击左下角“密码 / 第三方登录”。
 
 本仓库使用独立命名空间，首次迁移需要手动安装一次。之后的版本更新从本仓库获取，检查频率遵循 Tampermonkey 设置。
